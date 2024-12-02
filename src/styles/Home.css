@@ -1,0 +1,36 @@
+/* src/styles/Home.css */
+
+h1 {
+  font-size: 2.5rem; /* Increased for better emphasis */
+  color: #211522; /* Professional, elegant color */
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px;
+  letter-spacing: 1px; /* Enhanced readability */
+}
+
+p {
+  font-size: 1.3rem; /* Slightly larger for readability */
+  color: #444; /* Softer color for a professional tone */
+  line-height: 1.8; /* Increased line-height for readability */
+  margin-bottom: 15px;
+  text-align: justify; /* Aligned text for a cleaner look */
+}
+
+a {
+  font-size: 1.1rem; /* Increased font size for visibility */
+  text-decoration: none;
+  color: #613659; /* Matches your color palette */
+  font-weight: bold;
+  padding: 5px 10px; /* Added padding for better click area */
+  border-radius: 5px; /* Rounded edges for a modern look */
+  transition: all 0.3s ease; /* Smooth transitions for hover */
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: #d3b1c2; /* Light background for hover effect */
+  color: #211522; /* Darker text for contrast on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for hover effect */
+}

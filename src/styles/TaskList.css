@@ -1,0 +1,70 @@
+/* src/styles/TaskList.css */
+
+h2 {
+  font-size: 2rem; /* Increased for better visibility */
+  color: #211522; /* Elegant dark shade */
+  margin-bottom: 20px;
+  text-align: center; /* Centered heading */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px; /* Centered and limited width */
+}
+
+.task-list-item li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures button and text are aligned */
+  background-color: #f9f9f9; /* Lighter background for contrast */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 12px; /* Softer, modern rounded edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth interactions */
+}
+
+.task-list-item li:hover {
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.task-list-button button {
+  background-color: #61dafb; /* Eye-catching color for buttons */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold; /* Emphasized text */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth interactions */
+}
+
+.task-list-button button:hover {
+  background-color: #21a1f1; /* Darker shade for hover */
+  transform: scale(1.05); /* Slight growth effect */
+}
+
+.task-list-button button:active {
+  transform: scale(0.95); /* Shrink effect on click */
+  background-color: #1b8ed1; /* Even darker shade for click */
+}
+
+@media (max-width: 768px) {
+  ul {
+    padding: 0 10px; /* Reduced padding for smaller screens */
+  }
+
+  li {
+    padding: 10px; /* Adjusted padding for compact layout */
+  }
+
+  button {
+    padding: 8px 16px; /* Scaled-down button size */
+    font-size: 0.9rem; /* Adjusted font size */
+  }
+}

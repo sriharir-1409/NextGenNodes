@@ -1,0 +1,80 @@
+/* src/styles/TaskUpload.css */
+
+h2 {
+  font-size: 2rem; /* Prominent heading size */
+  color: #211522; /* Elegant color */
+  margin-bottom: 20px;
+  text-align: center; /* Center the heading */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px; /* Slightly wider form for better layout */
+  margin: 30px auto; /* Top margin for spacing */
+  padding: 20px; /* Padding around form */
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 12px; /* Smooth rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+input[type="text"], 
+input[type="number"] {
+  padding: 12px; /* Enhanced padding for comfort */
+  margin: 15px 0; /* Larger margin for spacing */
+  border: 1px solid #ccc; /* Neutral border color */
+  border-radius: 8px; /* Rounded corners for modern look */
+  font-size: 1rem; /* Consistent font size */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth focus effects */
+}
+
+input[type="text"]:focus, 
+input[type="number"]:focus {
+  border-color: #61dafb; /* Highlight border on focus */
+  outline: none;
+  box-shadow: 0 0 6px rgba(97, 218, 251, 0.5); /* Glow effect */
+}
+
+button {
+  background-color: #61dafb; /* Bright, attractive button color */
+  border: none;
+  color: white;
+  padding: 14px; /* Slightly larger padding */
+  font-size: 1rem; /* Clear, readable text */
+  font-weight: bold; /* Emphasized text */
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth interactions */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+button:hover {
+  background-color: #21a1f1; /* Darker blue on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+button:active {
+  transform: translateY(2px); /* Tactile press effect */
+  background-color: #1b8ed1; /* Slightly darker blue */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Reset shadow */
+}
+
+@media (max-width: 768px) {
+  form {
+    max-width: 100%; /* Adjust form width for smaller screens */
+    padding: 15px; /* Reduced padding */
+  }
+
+  input[type="text"], 
+  input[type="number"] {
+    font-size: 0.9rem; /* Slightly smaller font for smaller screens */
+  }
+
+  button {
+    padding: 12px; /* Adjusted button padding */
+    font-size: 0.9rem; /* Scaled-down button size */
+  }
+}

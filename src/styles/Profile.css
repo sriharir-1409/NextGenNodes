@@ -1,0 +1,113 @@
+/* Main container for the profile page */
+.profile-container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* Profile Heading */
+.profile-container h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Form container with proper grid layout */
+.profile-form {
+  width: 100%;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: stretch; /* Ensures inputs fill the available space */
+  margin-bottom: 30px;
+}
+
+.profile-form label {
+  font-size: 1rem;
+  color: #34495e;
+  margin-bottom: 5px;
+  display: block; /* Block-level label for better alignment */
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.profile-form input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Stack the form elements in a single column on smaller screens */
+@media (max-width: 768px) {
+  .profile-form {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+}
+
+/* Save Button styling */
+.save-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.save-button:hover {
+  background-color: #2980b9;
+}
+
+/* Profile Graph Section */
+.profile-graph{
+  background-color: white;
+}
+.profile-graph, .profile-bar-chart {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.profile-graph h2, .profile-bar-chart h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Bar chart canvas styling */
+.profile-bar-chart canvas {
+  background-color: white;
+  width: 100% !important;
+  height: 350px;
+}
+
+/* Mobile responsiveness for graphs */
+@media (max-width: 768px) {
+  .profile-bar-chart canvas {
+    background-color: white;
+    height: 250px; /* Adjust height for smaller screens */
+  }
+}
+

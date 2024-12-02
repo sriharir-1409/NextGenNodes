@@ -1,0 +1,67 @@
+freelancer-platform/
+│
+├── public/                     
+│   └── index.html              # Main HTML file
+│
+├── src/
+│   ├── components/             # Reusable UI components
+│   │   ├── Navbar.jsx           # Navigation bar
+│   │   ├── FreelancerDashboard.jsx
+│   │   ├── CompanyDashboard.jsx
+│   │   ├── TaskUpload.jsx
+│   │   ├── TaskList.jsx
+│   │   ├── TaskSubmission.jsx
+│   │   ├── Profile.jsx
+│   │   ├── Reviews.jsx
+│   │   ├── Home.jsx
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   └── About.jsx
+|   |
+│   ├── contracts/              # ABI and contract interactions
+│   │   └── TaskContract.js 
+|   |
+|   ├── smart_contracts/
+|   |    |
+|   |    ├── build/                      # Compiled contract artifacts (auto-generated)
+|   |    │   └── TaskManager.json        # ABI and bytecode for the contract
+|   |    │
+|   |    ├── contracts/
+|   |    │   └── TaskManager.sol         # Main Solidity contract for managing tasks
+|   |    │
+|   |    ├── migrations/                 # Deployment scripts (if using Truffle)
+|   |    |   ├── 1_intial_migration.js
+|   |    │   └── 2_deploy_contracts.js   # Script to deploy the TaskManager contract
+|   |    │
+|   |    └──test/                       # Test scripts for smart contracts
+|   |       └── truffle-config.js     # Test cases for TaskManager contract
+|   |    
+|   | 
+│   │
+│   ├── styles/                 # CSS and styled components
+│   │   └── ├── Navbar.css
+│   |       ├── CompanyDashboard.css
+│   |       ├── FreelancerDashboard.css
+│   |       ├── TaskUpload.css
+│   |       ├── TaskList.css
+│   |       ├── TaskSubmission.css
+│   |       ├── Review.css
+│   |       ├── Home.css
+│   |       ├── Login.css
+│   |		├── Register.css
+│   |		└──About.css
+│   |
+│   ├── utils/
+│   |    ├── blockchain.jsx       # Web3/Ethers helpers
+│   |    ├── contract.jsx           # General utility functions
+│   |    └── constants.jsx        # Configurations like contract addresses
+│   |
+│   ├── App.jsx                  # Main App component
+│   ├── index.jsx
+│   ├── App.css                  
+│   ├── index.css
+│   └── firebaseConfig.js                  
+│ 
+│──package-lock.json 
+│──package.json
+│──README.md

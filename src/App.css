@@ -1,0 +1,79 @@
+/* src/styles/app.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background color for the body */
+  color: #333; /* Default text color */
+  line-height: 1.6; /* Improve text readability */
+}
+
+nav {
+  background-color: #282c34; /* Darker shade for a sleek navigation bar */
+  padding: 1.5rem; /* Increased padding for better spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center items for better alignment */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px; /* Space out the list items */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem; /* Slightly larger text for better readability */
+  font-weight: 500; /* Slight bolding for the navigation items */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for hover effects */
+}
+
+nav ul li a:hover {
+  color: #61dafb; /* Blue color on hover */
+  text-decoration: underline;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 30px; /* Increased top margin for better spacing */
+  font-family: 'Arial', sans-serif;
+  color: #211522; /* Elegant text color */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+  font-size: 2.5rem; /* Larger font size for the main heading */
+}
+
+h2 {
+  font-size: 2rem; /* Slightly smaller font size for subheadings */
+  color: #444; /* Lighter color for subheading */
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack the navigation items vertically on smaller screens */
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Space out the navigation items vertically */
+  }
+
+  h1 {
+    font-size: 2rem; /* Reduce font size on smaller screens */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Adjust font size for subheadings */
+  }
+}
+

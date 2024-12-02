@@ -1,0 +1,75 @@
+/* src/styles/Register.css */
+
+h1 {
+  font-size: 2.5rem; /* Increased font size for better emphasis */
+  color: #211522; /* Professional and elegant color */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle depth effect */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px; /* Slightly wider for better form balance */
+  margin: 40px auto; /* Added top margin for spacing */
+  padding: 30px; /* Added padding for form container */
+  background: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px; /* Rounded edges for modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+input {
+  margin: 15px 0; /* Added spacing between inputs */
+  padding: 12px; /* Slightly larger padding for comfort */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded edges */
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  transition: all 0.3s ease; /* Smooth transitions for focus */
+}
+
+input:focus {
+  border-color: #28a745; /* Highlighted border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Glow effect */
+}
+
+button {
+  padding: 12px;
+  border: none;
+  background-color: #28a745; /* Primary green for call-to-action */
+  color: white;
+  font-size: 1.1rem; /* Slightly larger font for emphasis */
+  font-weight: bold;
+  border-radius: 5px; /* Rounded edges for a modern feel */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle depth effect */
+}
+
+button:hover {
+  background-color: #218838; /* Darker green for hover effect */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+button:active {
+  transform: translateY(2px); /* Tactile push effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reset shadow */
+}
+
+@media (max-width: 768px) {
+  form {
+    padding: 20px; /* Adjusted padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Scaled down font for smaller screens */
+  }
+
+  input, button {
+    font-size: 1rem; /* Adjusted font size for better fit */
+  }
+}
